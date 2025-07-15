@@ -12,12 +12,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 40px 10px 20px;
 }
 
 .intro-image img {
-  width: 1000px;
-  height: 700px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
   border-radius: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   align-items: center;
@@ -25,15 +26,16 @@ body {
 
 .intro-heading {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 900;
-  margin-bottom: 40px;
+  margin: 20px 15px 30px;
 }
 
 .intro-description {
   max-width: 900px;
   margin: 0 auto;
-  font-size: 1.5em;
+  padding: 0 20px;
+  font-size: 1.2em;
   text-align: justify;
 }
 
@@ -41,13 +43,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  margin: 40px 0;
 }
 
 .visit-btn {
   background-color: maroon;
   color: #fff;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -55,7 +57,13 @@ body {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.visit-btn:hover {
-  background-color: #8b1e3f;
-  transform: scale(1.05);
+@media (max-width: 600px) {
+  .intro-heading {
+    font-size: 2em;
+}
+
+.visit-btn {
+  font-size: 1em;
+  padding: 12px 24px;
+}
 }
